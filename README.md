@@ -10,7 +10,7 @@ This is a collection of common settings for Emacs-live package
 ### Installation
 
 There is a good step-by-step instruction for installing and customizing Emacs-live at:
-(http://paradigmx.net/blog/2013/04/01/clojure-toolchain-reloaded/)[http://paradigmx.net/blog/2013/04/01/clojure-toolchain-reloaded/]
+[http://paradigmx.net/blog/2013/04/01/clojure-toolchain-reloaded/](http://paradigmx.net/blog/2013/04/01/clojure-toolchain-reloaded/)
 
 Afert installing Emacs-live please do:
 
