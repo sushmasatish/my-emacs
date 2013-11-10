@@ -30,7 +30,7 @@ git clone git@github.com:BrunoBonacci/my-emacs.git
 
 ```
 
-Finally tell emacs to use your additional packs as well with by creating a file called `~/.emacs-live.el` 
+Finally tell emacs to use your additional packs as well with by creating a file called `~/.emacs-live.el`
 with the following content:
 ```
 (live-use-packs '(live/foundation-pack     ; Use live-use-packs to control which built-in packs should be loaded
@@ -41,7 +41,7 @@ with the following content:
                   live/git-pack
                   live/org-pack
                   live/bindings-pack))
-                  
+
 (live-add-packs '(~/.live-packs/bruno-pack
                   ~/.live-packs/solarized-pack))
 ```
