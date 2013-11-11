@@ -19,14 +19,14 @@ mkdir ~/.live-packs
 
 # installing solarized theme
 cd ~/.live-packs
-git clone git://github.com/siancu/solarized-pack.git
+git clone https://github.com/siancu/solarized-pack.git
 cd solarized-pack
 git submodule init
 git submodule update
 
 # installing my-emacs customizations
 cd ~/.live-packs
-git clone git@github.com:BrunoBonacci/my-emacs.git
+git clone https://github.com/BrunoBonacci/my-emacs.git
 
 ```
 
@@ -42,7 +42,7 @@ with the following content:
                   live/org-pack
                   live/bindings-pack))
 
-(live-add-packs '(~/.live-packs/bruno-pack
+(live-add-packs '(~/.live-packs/my-emacs
                   ~/.live-packs/solarized-pack))
 ```
 
