@@ -10,3 +10,10 @@
 ;; text increase/decrease with [cmd] + mouse wheel scroll
 (global-set-key [s-triple-wheel-up] 'text-scale-increase)
 (global-set-key [s-triple-wheel-down] 'text-scale-decrease)
+
+;; reload buffers from disk when the file changes
+(global-auto-revert-mode t)
+
+;; hightlight modeline of active buffer
+(set-face-foreground 'mode-line "black")
+(set-face-background 'mode-line "green4")
