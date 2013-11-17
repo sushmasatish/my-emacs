@@ -42,8 +42,8 @@ with the following content:
                   live/org-pack
                   live/bindings-pack))
 
-(live-add-packs '(~/.live-packs/my-emacs
-                  ~/.live-packs/solarized-pack))
+(live-add-packs '(~/.live-packs/solarized-pack
+                  ~/.live-packs/my-emacs))
 ```
 
 Now you should be ready to run emacs and hack something.
