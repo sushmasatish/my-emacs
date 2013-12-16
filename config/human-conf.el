@@ -17,3 +17,6 @@
 ;; hightlight modeline of active buffer
 (set-face-foreground 'mode-line "black")
 (set-face-background 'mode-line "green4")
+
+;; inactive modeline should be of a slightly different color
+(set-face-background 'modeline-inactive "grey20")
