@@ -8,3 +8,6 @@
 
 ;; Custom settings
 (live-load-config-file "human-conf.el")
+
+;; Custom settings
+(live-load-config-file "paredit.el")
