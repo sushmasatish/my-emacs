@@ -23,3 +23,13 @@
   )
 
 (add-hook 'nrepl-mode-hook 'my-nrepl-mode-keys)
+
+
+;; Add more natural <up> and <down> key bindings for nrepl mode
+(defun my-cider-mode-keys ()
+  "Modify keymaps used by repl."
+  (local-set-key (kbd "<up>")   'cider-repl-previous-input)
+  (local-set-key (kbd "<down>") 'cider-repl-next-input)
+  )
+
+(add-hook 'cider-repl-mode-hook 'my-cider-mode-keys)
