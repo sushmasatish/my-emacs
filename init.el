@@ -11,3 +11,6 @@
 
 ;; Custom settings
 (live-load-config-file "paredit.el")
+
+;; automatically open org-file on startup
+(find-file "~/.TODO.org")

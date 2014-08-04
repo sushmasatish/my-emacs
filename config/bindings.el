@@ -33,3 +33,20 @@
   )
 
 (add-hook 'cider-repl-mode-hook 'my-cider-mode-keys)
+
+
+;; json pretty-print
+(defun json-format ()
+  (interactive)
+  (save-excursion
+    (shell-command-on-region (mark) (point) "python -m json.tool" (buffer-name) t)))
+
+
+;; add major mode key binding for JSON pretty print
+(defun my-json-mode-keys ()
+  "Modify keymaps used by the editor."
+  (local-set-key (kbd "C-M-\\")   'json-format)
+  )
+
+(add-hook 'js-mode-hook 'my-json-mode-keys)
+(add-hook 'js2-mode-hook 'my-json-mode-keys)
