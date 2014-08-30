@@ -3,6 +3,11 @@
 ;; Use this file to initiate the pack configuration.
 ;; See README for more information.
 
+;; Solarized pack init file
+;;
+(live-load-config-file "solarized-conf.el")
+
+
 ;; Load bindings config
 (live-load-config-file "bindings.el")
 
