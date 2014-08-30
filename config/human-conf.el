@@ -20,3 +20,6 @@
 
 ;; inactive modeline should be of a slightly different color
 (set-face-background 'modeline-inactive "grey20")
+
+;; increase default font size
+(live-set-default-font "Source Code Pro 14")
