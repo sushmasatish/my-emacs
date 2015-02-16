@@ -23,3 +23,6 @@
 
 ;; increase default font size
 (live-set-default-font "Source Code Pro 14")
+
+;; disable join/part notifications in erc
+(setq erc-hide-list '("JOIN" "PART" "QUIT"))
