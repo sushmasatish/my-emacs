@@ -26,3 +26,7 @@
 
 ;; disable join/part notifications in erc
 (setq erc-hide-list '("JOIN" "PART" "QUIT"))
+
+;; Disable YAS autocompletion for Terminal Mode
+(add-hook 'term-mode-hook (lambda()
+        (setq yas-dont-activate t)))
