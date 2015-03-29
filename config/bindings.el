@@ -30,6 +30,7 @@
   "Modify keymaps used by repl."
   (local-set-key (kbd "<up>")   'cider-repl-previous-input)
   (local-set-key (kbd "<down>") 'cider-repl-next-input)
+  (local-set-key (kbd "C-c C-.") 'cider-macroexpand-1)
   )
 
 (add-hook 'cider-repl-mode-hook 'my-cider-mode-keys)
