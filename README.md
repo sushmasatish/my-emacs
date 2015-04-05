@@ -33,8 +33,8 @@ Next checkout emacs-live
     ```
     git clone git://github.com/overtone/emacs-live.git ~/.emacs.d
     cd ~/.emacs.d
-    # checkout  the latest release tag currently 1.0-BETA-24
-    git checkout tags/release/1.0-BETA-24
+    # checkout  the latest release tag currently 1.0-BETA26
+    git checkout tags/release/1.0-BETA26
     ```
 
 Afert installing Emacs-live do:
@@ -49,14 +49,15 @@ Finally tell emacs to use your additional packs as well with by creating a file 
 with the following content:
      
     ```
-    (live-use-packs '(live/foundation-pack      ; Use live-use-packs to control which built-in packs should be loaded
-                      ;; live/colour-pack       ; This built-in pack MUST be disabled if you want to use 3rd party color theme pack
-                      live/clojure-pack
-                      live/lang-pack
-                      live/power-pack
-                      live/git-pack
-                      live/org-pack
-                      live/bindings-pack))
+    (live-use-packs '(stable/foundation-pack
+                  ;; stable/colour-pack       ; This built-in pack MUST be disabled if you want to use 3rd party color theme pack
+                  stable/lang-pack
+                  stable/power-pack
+                  stable/git-pack
+                  stable/org-pack
+                  stable/clojure-pack
+                  stable/bindings-pack
+                  ))
 
     (live-add-packs '(~/.live-packs/my-emacs))
     ```
