@@ -21,4 +21,5 @@
 (live-load-config-file "neotree.el")
 
 ;; automatically open org-file on startup
+;; TODO: create if not exists
 (find-file "~/.TODO.org")
