@@ -30,3 +30,6 @@
 ;; Disable YAS autocompletion for Terminal Mode
 (add-hook 'term-mode-hook (lambda()
         (setq yas-dont-activate t)))
+
+;; Disable tabs and uses sapces intead
+(setq-default indent-tabs-mode nil)
