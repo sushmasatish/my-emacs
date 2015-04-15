@@ -11,7 +11,7 @@ This is a collection of common settings for Emacs-live package
   - JSON format with `[C-M-\]`
   - Modified Arrows Up an Down in consoles and REPL to load last command.
   - Automatic reload of changed buffers from disk
-  - On start up opens .TODO.dot which you can use to organize your notes.
+  - On start up opens **.TODO.dot** which you can use to organize your notes.
   - It uses [NeoTree](http://www.emacswiki.org/emacs/NeoTree) and it binds it to `[C-x t]` to open a tree, and `[C-x M-t]` to open the project root using the git root of the current project.
   
 
