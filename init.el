@@ -21,5 +21,19 @@
 (live-load-config-file "neotree.el")
 
 ;; automatically open org-file on startup
-;; TODO: create if not exists
-(find-file "~/.TODO.org")
+(setq default-message
+      "
+* org-mode is a great tool, use it for your own notes
+** org-mode key-bindings http://orgmode.org/orgcard.txt
+** Documentation: http://orgmode.org/
+** Video tutorials:
+  - https://www.youtube.com/watch?v=6W82EdwQhxU
+  - https://www.youtube.com/watch?v=fgizHHd7nOo
+  - https://www.youtube.com/watch?v=bzZ09dAbLEE
+")
+
+;; if not exists create one
+(if (not (file-exists-p "~/.TODO.org"))
+    (append-to-file default-message nil "~/.TODO.org"))
+;; open all existing ones
+(mapcar 'find-file  (directory-files "~/" t "^.TODO.*.org"))
