@@ -8,6 +8,7 @@ This is a collection of common settings for Emacs-live package
   - key binding to move between split-panes wit `[Cmd] + [Alt] + [Arrows]` a far more natural way
   - key binding to resize the font with `[Cmd] + [Mouse-Wheel-Scroll-UP|DOWN]`
   - Paredit copy next sexp `[Ctrl] + [Shift] + c`, Duplicate next sexp `[C-S-d]` and kill next sexp `[C-S-k]` 
+  - Added expand region bound to `[C-=]`
   - JSON format with `[C-M-\]`
   - Modified Arrows Up an Down in consoles and REPL to load last command.
   - Automatic reload of changed buffers from disk
