@@ -51,3 +51,10 @@
 
 (add-hook 'js-mode-hook 'my-json-mode-keys)
 (add-hook 'js2-mode-hook 'my-json-mode-keys)
+
+
+;;
+;; Expand region is too cool to not to use it
+;;
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
