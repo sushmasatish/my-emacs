@@ -20,6 +20,9 @@
 ;; Neotree
 (live-load-config-file "neotree.el")
 
+;; mitical restclient
+(live-load-config-file "restclient.el")
+
 ;; automatically open org-file on startup
 (setq default-message
       "
