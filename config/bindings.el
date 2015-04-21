@@ -54,6 +54,16 @@
 
 
 ;;
+;; Clojure mode font-locking for partial
+;;
+(eval-after-load 'clojure-mode
+  '(font-lock-add-keywords
+    'clojure-mode `(("(\\(partial\\)[[:space:]]"
+                     (0 (progn (compose-region (match-beginning 1)
+                                               (match-end 1) "Ƥ")
+                               nil))))))
+
+;;
 ;; Expand region is too cool to not to use it
 ;;
 (require 'expand-region)
