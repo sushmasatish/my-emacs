@@ -40,3 +40,10 @@
     (append-to-file default-message nil "~/.TODO.org"))
 ;; open all existing ones
 (mapcar 'find-file  (directory-files "~/" t "^.TODO.*.org"))
+
+
+;; load custom yas snippets
+(add-to-list 'yas-snippet-dirs
+             (or (concat (file-name-directory load-file-name) "yas")
+                 "~/.live-packs/my-emacs/yas"))
+(yas-reload-all)
