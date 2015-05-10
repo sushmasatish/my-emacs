@@ -1,0 +1,4 @@
+#name: alembic
+# --
+(require 'alembic.still)
+(alembic.still/distill '${1:[clj-http "1.1.1"]})
