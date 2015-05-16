@@ -93,4 +93,6 @@ Example: `~/.prodigy.el`
         :kill-process-buffer-on-stop t))
 ```
 
+To access the *Prodigy console* call `M-x prodigy`
+
 see this page for more info: https://github.com/rejeep/prodigy.el
