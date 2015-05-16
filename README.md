@@ -5,17 +5,17 @@ This is a collection of common settings for Emacs-live package
 ### What this pack contains
 
   - Solarized theme with some visibility improved (from https://github.com/siancu/solarized-pack.git)
-  - key binding to move between split-panes wit `[Cmd] + [Alt] + [Arrows]` a far more natural way
-  - key binding to resize the font with `[Cmd] + [Mouse-Wheel-Scroll-UP|DOWN]`
-  - Paredit copy next sexp `[Ctrl] + [Shift] + c`, Duplicate next sexp `[C-S-d]` and kill next sexp `[C-S-k]` 
-  - Added expand region bound to `[C-=]`
-  - JSON format with `[C-M-\]`
+  - key binding to move between split-panes wit <kbd>[Cmd] + [Alt] + [Arrows]</kbd> a far more natural way
+  - key binding to resize the font with <kbd>[Cmd] + [Mouse-Wheel-Scroll-UP|DOWN]</kbd>
+  - Paredit copy next sexp <kbd>[Ctrl] + [Shift] + c</kbd>, duplicate next sexp <kbd>[C-S-d]</kbd> and kill next sexp <kbd>[C-S-k]</kbd> 
+  - Added expand region bound to <kbd>[C-=]</kbd>
+  - JSON format with <kbd>[C-M-\]</kbd>
   - Modified Arrows Up an Down in consoles and REPL to load last command.
   - Automatic reload of changed buffers from disk
   - On start up opens **.TODO.dot** which you can use to organize your notes.
-  - It uses [NeoTree](http://www.emacswiki.org/emacs/NeoTree) and it binds it to `[C-x t]` to open a tree, and `[C-x M-t]` to open the project root using the git root of the current project.
-  - **Mythical [restclient](https://github.com/pashky/restclient.el)** integration
-  - Fantastic **[prodigy](https://github.com/rejeep/prodigy.el)**
+  - It uses [NeoTree](http://www.emacswiki.org/emacs/NeoTree) and it binds it to <kbd>[C-x t]</kbd> to open a tree, and <kbd>[C-x M-t]</kbd> to open the project root using the git root of the current project.
+  - Mythical **[restclient](https://github.com/pashky/restclient.el)** integration
+  - Fantastic **[prodigy](https://github.com/rejeep/prodigy.el)** integration
   
 
 ### Installation
@@ -69,8 +69,8 @@ Prodigy allows you to define a bunch of services which you commonly
 start/stop during your development and create a configuration template
 which then allows you to start/stop a service with one keystroke.
 It is not required to open a `shell` and go to the appropriate directory
-and then start the wanted service, just press `s` to start and `S` to stop,
-if you want to check the output then press `$`.
+and then start the wanted service, just press <kbd>s</kbd> to start and <kbd>S</kbd> to stop,
+if you want to check the output then press <kbd>$</kbd>.
 
 In order to configure your *prodigy* services you need to create a file
 called `.prodigy.el` in your $HOME directory and add the service
@@ -93,6 +93,6 @@ Example: `~/.prodigy.el`
         :kill-process-buffer-on-stop t))
 ```
 
-To access the *Prodigy console* call `M-x prodigy`
+To access the *Prodigy console* call <kbd>M-x prodigy RET</kbd>
 
 see this page for more info: https://github.com/rejeep/prodigy.el
