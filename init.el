@@ -43,7 +43,12 @@
 
 
 ;; load custom yas snippets
+(require 'yasnippet)
 (add-to-list 'yas-snippet-dirs
              (or (concat (file-name-directory load-file-name) "yas")
                  "~/.live-packs/my-emacs/yas"))
 (yas-reload-all)
+
+
+;; load prodigy
+(live-load-config-file "prodigy.el")

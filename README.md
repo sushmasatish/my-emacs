@@ -14,7 +14,8 @@ This is a collection of common settings for Emacs-live package
   - Automatic reload of changed buffers from disk
   - On start up opens **.TODO.dot** which you can use to organize your notes.
   - It uses [NeoTree](http://www.emacswiki.org/emacs/NeoTree) and it binds it to `[C-x t]` to open a tree, and `[C-x M-t]` to open the project root using the git root of the current project.
-  - Mythical [restclient](https://github.com/pashky/restclient.el) 
+  - **Mythical [restclient](https://github.com/pashky/restclient.el)** integration
+  - Fantastic **[prodigy](https://github.com/rejeep/prodigy.el)**
   
 
 ### Installation
@@ -61,3 +62,27 @@ with the following content:
 Now you should be ready to run emacs and hack on something.
 
 Have fun!
+
+#### Prodigy configuration
+
+In order to configure your *prodigy* services you need to create a file called `.prodigy.el` in your
+$HOME directory and add the service specifications there.
+
+Example: `~/.prodigy.el`
+
+```
+(require 'prodigy)
+
+(setq prodigy-services
+      (prodigy-define-service
+        :name "Service"
+        :cwd "/workspace/my/project"
+        :command "lein"
+        :args '("run" "--" "-c" "./config/config.edn")
+        :tags '(project1 test)
+        :port 9000
+        :stop-signal 'kill
+        :kill-process-buffer-on-stop t))
+```
+
+see this page for more info: https://github.com/rejeep/prodigy.el
