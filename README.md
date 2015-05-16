@@ -65,8 +65,16 @@ Have fun!
 
 #### Prodigy configuration
 
-In order to configure your *prodigy* services you need to create a file called `.prodigy.el` in your
-$HOME directory and add the service specifications there.
+Prodigy allows you to define a bunch of services which you commonly
+start/stop during your development and create a configuration template
+which then allows you to start/stop a service with one keystroke.
+It is not required to open a `shell` and go to the appropriate directory
+and then start the wanted service, just press `s` to start and `S` to stop,
+if you want to check the output then press `$`.
+
+In order to configure your *prodigy* services you need to create a file
+called `.prodigy.el` in your $HOME directory and add the service
+specifications there.
 
 Example: `~/.prodigy.el`
 
