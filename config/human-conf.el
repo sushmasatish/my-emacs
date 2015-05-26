@@ -33,3 +33,6 @@
 
 ;; Disable tabs and uses sapces intead
 (setq-default indent-tabs-mode nil)
+
+;; Enable Dired to copy between buffers in a split-screen
+(setq dired-dwim-target t)
