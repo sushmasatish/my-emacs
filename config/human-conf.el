@@ -34,5 +34,11 @@
 ;; Disable tabs and uses sapces intead
 (setq-default indent-tabs-mode nil)
 
+;; Dired config
 ;; Enable Dired to copy between buffers in a split-screen
 (setq dired-dwim-target t)
+;; allow dired to be able to delete or copy a whole dir.
+(setq dired-recursive-copies (quote always)) ; “always” means no asking
+(setq dired-recursive-deletes (quote top)) ; “top” means ask once
+(require 'dired-x)
+(global-set-key (kbd "C-x C-/")  'dired-jump) ;; jump to dired currentfile

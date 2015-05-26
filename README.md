@@ -16,6 +16,7 @@ This is a collection of common settings for Emacs-live package
   - It uses [NeoTree](http://www.emacswiki.org/emacs/NeoTree) and it binds it to <kbd>[C-x t]</kbd> to open a tree, and <kbd>[C-x M-t]</kbd> to open the project root using the git root of the current project.
   - Mythical **[restclient](https://github.com/pashky/restclient.el)** integration
   - Fantastic **[prodigy](https://github.com/rejeep/prodigy.el)** integration
+  - Dired copy between split-windows and jump to current file with <kbd>C-x C-/</kbd>
   
 
 ### Installation
