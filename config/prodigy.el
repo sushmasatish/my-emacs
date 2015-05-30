@@ -13,3 +13,6 @@
 ;;
 (if (file-exists-p "~/.prodigy.el")
     (live-load-config-file "~/.prodigy.el"))
+
+;; set key binding
+(global-set-key (kbd "C-x p") 'prodigy)
