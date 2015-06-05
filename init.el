@@ -52,3 +52,6 @@
 
 ;; load prodigy
 (live-load-config-file "prodigy.el")
+
+;;load rvm
+(live-load-config-file "rvm.el")
